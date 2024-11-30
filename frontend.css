@@ -114,9 +114,9 @@ text-shadow: 0 0 30px white;
     }
     .work_list .work span{
         color: white;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 600;
-        padding-inline: 2rem;
+        padding-inline: 0rem;
     }
 
 

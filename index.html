@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tech_bachelor</title>
     <link rel="stylesheet" href="styles.css">
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 
 </head>
 <body>
-   <div class="socialicons" style="position:absolute; height: 100%;">
+   <div class="socialicons" style="position:absolute; height: 100%; z-index: 100;">
     <div class="socialbox">
         
         <div class="icon"><a href="https://github.com/AravindAttepu"><i class='bx bxl-github'></i></a></div>
@@ -46,7 +47,7 @@
                     <span>Web Developer / Programmer</span>
                 </div>
                 <div class="contactbtn">
-                    <a href="">Get in touch<i style="font-size: 1.4rem;" class='bx bx-chevron-right' ></i></a>
+                    <a href="mailto:aravindattepu@gmail.com">Get in touch<i style="font-size: 1.4rem;" class='bx bx-chevron-right' ></i></a>
                 </div>
             </div>
         </div>
@@ -55,23 +56,26 @@
                 <div class="arrow"><a style="text-decoration: none; color: white;" href="#about"><i style="font-size: 2rem;" class='bx bx-down-arrow-alt' ></i></a></div>
             </div>
         </div>
-        <div class="about" id="about">
+        <div class="about" id="about" style="">
             <div class="heading" style="margin-bottom: 2rem;"><span>
                 Hi, I’m Aravind, a programmer and full-stack developer.</span>
             <span></span></div>
-            <div class="description"><span>With Strong foundation in Python and C#, currently enhancing capabilities in full stack development (.NET, React) .</span></div>
+            <div class="description" style="box-sizing: border-box;"><p>With Strong foundation in C# and Python, currently enhancing capabilities in full stack development (.NET) .</p>
+                <p><a class="resume" href="https://drive.google.com/file/d/1Z-JsntuvM0H3a1ESGID-cjS2zZkqzYHt/view?usp=sharing" target="_blank">Resume</a></p>
+                </div>
+           
         </div>
         <div class="skillsbox">
         <div class="skills about">
-            <div class="skills-head heading"><span style="font-size: 3em; text-align: center;">I work on:</span></div>
+            <div class="skills-head heading"><span style=" text-align: center;">I work on:</span></div>
             <div class="skills-info">
                 <div class="skill">
                     <div class="arrow"><i class='bx bx-right-top-arrow-circle' ></i></div>
-                    <div class="skill-name"><a href="frontend_projects.html">Frontend</a></div>
+                    <div class="skill-name"><a href="">Frontend</a></div>
                 </div>
                 <div class="skill">
                     <div class="arrow"><i class='bx bx-right-top-arrow-circle'></i></div>
-                    <div class="skill-name"><a href="">Designing</a></div></div>
+                    <div class="skill-name"><a href="">API</a></div></div>
                 <div class="skill">
                     <div class="arrow"><i class='bx bx-right-top-arrow-circle'></i></div>
                     <div class="skill-name"><a href="">Databases</a></div>
@@ -79,9 +83,59 @@
             </div>
         </div>
     </div>
-    div.
+    <div class="navigationsection">
+        <div class="innercontent about" style="text-align: center; display: block;">
+            <div class="projects_gate" id="projects_gate">Projects <span style="float: right; padding-inline-end: 20px;"><i class='bx bx-chevron-down bx-rotate-180'></i></span> </div>
+            <div class="project_tab hide" id="project_tab" >
+            <div class="projects">
+                <div class="heading">Marvel Comics</div>
+                <div class="description">``Display Marvel characters with their comics, series, and detailed info using the Marvel API.``</div>
+                <div class="projectinfo ">
+                    <p>This project is a web application developed using the Marvel API to provide an interactive platform for exploring Marvel characters, their associated comics, and series. Users can:</p>
+                    <ul>
+                        <li><strong>Characters:</strong> Search and discover detailed profiles of iconic Marvel characters.</li>
+                        <li><strong>Comics and Series:</strong> Access comprehensive lists of comics and series featuring specific characters, complete with descriptions, publication details, and imagery.</li>
+                        <li><strong>User-Friendly Interface:</strong> Enjoy a visually engaging and intuitive interface for easy navigation through the vast Marvel universe.</li>
+
+                    </ul>
+                    <p>Website: <a href="https://tech-bachelor.somee.com/" target="_blank" rel="noopener noreferrer">Click here</a>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="projects">
+                <div class="heading">Order Management</div>
+                <div class="description">``Seamlessly store and track orders in a database.``</div>
+                <div class="projectinfo">
+                    <p>This project is a web-based application designed to manage customer orders efficiently. Key features include:</p>
+                    <ul>
+                        <li><strong>Customer Registration:</strong> New customers can register with email verification to ensure authenticity. Only verified users can place orders.</li>
+                        <li><strong>Order Management:</strong> Customers can enter their orders, including item details, which are securely stored in a database.</li>
+                        <li><strong>Orders Page:</strong> A dedicated page displays all customer orders for easy tracking and management.</li>
+                        <li><strong>AJAX Integration:</strong> AJAX is used to send and receive data seamlessly, providing a smooth and responsive user experience.</li>
+
+                    </ul>
+                    <p>Website: <a href="https://aravindattepu.github.io/Restaurant_webapi/" target="_blank" rel="noopener noreferrer">Click here</a>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="clonebtn projects_gate" style="background-color: rgb(19, 3, 245);">
+                <a href="frontend_projects.html" style="text-decoration: none; color: white;"><span>Website Clones</span></a>
+
+            </div>
+        </div>
+        <div class="resume_tab"></div>
+        </div>
+
+    </div>
+    <div class="footer about" style="padding: 0; flex-direction: column;">
+        <div class="contact"><span>A Product of </span></div>
+        <div class="footer_details contact"><img height="30px" src="logo-lg.png" alt=""></div>
+    </div>
    
 
 </div>
 </body>
+<script type="text/javascript" src="index.js"></script>
 </html>

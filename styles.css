@@ -3,8 +3,12 @@ body, html{
     background-color:#1a1a1a;
     font-size: 16px;
     margin:0;
- 
+    scroll-behavior: smooth; 
     
+}
+::selection {
+    background-color: #4caf4f00;
+    color: rgb(69, 86, 196);
 }
 .nav-bar{
     box-sizing: border-box;
@@ -141,12 +145,16 @@ color: white;
     align-content: center;
     left: 50vw;
 }
+.innercontent
+{
+   
+}
 .main .downarrow {
     position: relative;
     height: max-content;
     width: 100%;
     text-align: center;
-    top:10vw;
+   margin-top: 50px;
 }
 .main .myintro .profession .contactbtn:hover{
    
@@ -158,15 +166,15 @@ color: white;
     box-sizing: border-box;
     flex-direction: row; 
     width: 80%;
-    height: max-content;
-    top:20vh;
+    
+    
     position: relative;
     left:10vw;
     padding: 2em;
 
     background-color:#1d1d1d;
     margin-top: 6em;
-    transition: 0.9s linear;
+
 }
 .main .about .heading{
     font-family: Arial, Helvetica, sans-serif;
@@ -185,14 +193,89 @@ color: white;
   
     color: white;
 }
+.projects{
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.projectinfo{
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.567);
+    font-size: 1.2em;
+    text-align: left;
+    text-align: justify;
+    padding-top: 20px;
+    line-height: 1.5;
+
+    
+}
+.projectinfo > ul > li{
+    margin-bottom: 10px;
+}
+.innercontent{
+    transition: all 1s ease-in-out;
+}
+.project_tab{
+    transition: all 1s ease-in-out;
+   
+}
+
+.hide{
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+}
+.projects_gate{
+   
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 3em;
+    padding: 10px;
+    text-align: left;
+    padding-inline-start: 20px;
+    border: 2px solid;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: white;
+}
+.clonebtn{
+    text-align: center;
+    font-size: 2em;
+    width: 50%;
+    margin: auto;
+}
+.resume{
+    border: 2px solid white;
+    padding: 10px;
+    padding-inline: 20px;
+    border-radius: 1em;
+    text-decoration: none;
+    color: white;
+   position: relative;
+   top:20px
+}
+.navigationsection a{
+    text-decoration: none;
+    color:rgb(59, 59, 255)
+}
 .main .skillsbox{
     width: 100%;
-    height: max-content;
+   
   flex-direction: column;
   position: relative;
-  top:25vh;
+  margin-bottom: 100px;
     
     
+}
+.main .skills .skills-head
+{
+    font-size: 5rem;
+    font-weight: bolder;
 }
 .main .skills{
     display: flex;
@@ -261,7 +344,7 @@ font-size: 2.5rem;
     padding-right: 100%;
 }
 .main .skills .skills-head{
-    font-size: 2rem;
+
     color:white
     
 
@@ -297,6 +380,23 @@ transition: 0.2s ease-in;
     text-shadow: 0 0px 20px white;
 }
 
+.footer{
+    padding-top: 100px;
+}
+.contact{
+    color: white;
+   font-size: 1.5rem;
+   font-weight: 500;
+  text-align: center;
+    background-color:#1d1d1d;
+    width: 80%;
+    margin-inline: auto;
+    
+    padding:14px;
+    box-sizing: border-box;
+
+}
+
 @media (max-width : 992px) {
     .main .skills .skills-head{
         font-size: 1.1rem;
@@ -309,7 +409,8 @@ transition: 0.2s ease-in;
    
     .main .about{
         flex-wrap: wrap;
-        justify-content: center;
+       
+      
 
     }
     body,html{
@@ -323,10 +424,18 @@ transition: 0.2s ease-in;
     }
     .main .skills .skills-head{
     }
-
+    .main .about .heading{
+        font-size: 3em;
+    }
+   .projectinfo > ul{
+padding-left: 20px;
+    }
     .main .myintro .fullname{
         font-size: 3rem;
         bottom: 20vh;
+    }
+    .projects > .description{
+        display: none;
     }
     .main .myintro .profession .work{
         position: absolute;
@@ -349,10 +458,20 @@ transition: 0.2s ease-in;
     .main .downarrow .shape{
         left:45vw
     }
+    
     .main .about .description{
         line-height: 3ch;
     }
     .socialbox{
         width: 8vw;
+    }
+    .projects > .heading,.description
+    {
+        text-align: center;
+    }
+    .main .about .description{
+        text-align: left;
+        font-size: 1.3em;
+        
     }
 }
