@@ -1,0 +1,123 @@
+body, html{
+    background-color:#1a1a1a;
+    font-size: 16px;
+    margin:0;
+   
+ 
+    
+}
+*{
+    box-sizing: border-box;
+}
+.nav-bar{
+    box-sizing: border-box;
+    height:max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    text-align: center;
+    justify-items: center;
+border-radius: 1rem;
+    padding: 5px 20px;
+    
+
+}
+.nav-bar .logo{
+   
+    width: 4.5rem;
+    height: 4.5rem;
+    
+    align-content: center;
+    text-align: center;
+ 
+    background-size: cover;
+    background-color: #2b2b2b;
+    border-radius: 0.5rem;
+}
+.nav-bar .logo img{
+    border-radius: 1rem;
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    
+}
+.nav-bar .msg
+{
+    align-content: center;
+    width: 4em;
+    height:4em;
+    border-radius: 1rem;
+    border: 1px solid white;
+    overflow: hidden;
+}
+.nav-bar .msg i{
+    color: white;
+    font-size: 2em;
+}
+.title
+{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 52px;
+    font-weight: 700;
+    font-family: "Inter";
+}
+.work_list{
+    width: 70%;
+    margin: 50px auto;
+    background-color: #252525;
+    border-radius: 2rem;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1, 12fr;
+    
+}
+.work_list a{
+    text-decoration: none;
+}
+.work_list .work{
+    width: 95%;
+    margin: 20px auto;
+    height: 18rem;
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    text-align:center;
+    align-content: center;
+    
+}
+.work_list .work:hover{
+transform: scale(1.07);
+text-shadow: 0 0 30px white;
+
+
+}
+.work_list .work span{
+    color: white;
+    font-size: 5rem;
+    font-weight: 800;
+    padding-inline: 2rem;
+}
+
+
+
+
+@media (max-width : 992px){
+
+    .work_list{
+        width: 90%;
+    }
+    .work_list .work{
+        width: 90%;
+        height: 10rem;
+    }
+    .work_list .work span{
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding-inline: 2rem;
+    }
+
+
+}
