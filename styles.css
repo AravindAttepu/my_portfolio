@@ -41,7 +41,12 @@ border-radius: 1rem;
     width: 3rem;
     height: 3rem;
     object-fit: cover;
+    filter: grayscale(1);
     
+    
+}
+.logo img{
+    filter: grayscale(1);
 }
 .nav-bar .msg
 {
@@ -242,6 +247,7 @@ color: white;
     margin-bottom: 30px;
     cursor: pointer;
     color: white;
+    transition: 0.5s ease-in-out
 }
 .clonebtn{
     text-align: center;
@@ -396,6 +402,66 @@ transition: 0.2s ease-in;
     box-sizing: border-box;
 
 }
+.innerhead{
+    background-color: #353535;
+    height: 60px;
+    border-radius:  10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding-inline:20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    color: white;
+    word-break: inherit;
+
+}
+
+.innercontentwork{
+    background-color: white;
+    height: 350px;
+    border-radius:0 0 10px 10px;
+    object-fit: fill;
+    text-align: center;
+}
+.innercontentwork img
+{
+    /* height: 100%; */
+    width: 100%;
+}
+.innercontentblock{
+
+    width: 70%;
+    position: sticky;
+    top: 100px;
+    /* height: 1000px; */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    
+}
+.innercontentblockparent{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+        align-items: center;
+        height:550px;
+        overflow-x: scroll;
+}
+
+/* Stacking effect */
+/* .innercontentblock:nth-child(1) { transform: translateY(-10px); z-index: 1; }
+.innercontentblock:nth-child(2) { transform: translateY(0px);z-index: 1; }
+.innercontentblock:nth-child(3) { transform: translateY(10px); z-index: 3;}
+
+Fan-out on hover */
+
+/* .innercontentblockparent:hover .card:nth-child(1) { transform: translateY(-50px) rotate(-10deg); }
+.innercontentblockparent:hover .card:nth-child(2) { transform: translateY(-20px) rotate(0deg); }
+.innercontentblockparent:hover .card:nth-child(3) { transform: translateY(30px) rotate(10deg); }
+ */
 
 @media (max-width : 992px) {
     .main .skills .skills-head{
@@ -431,7 +497,7 @@ transition: 0.2s ease-in;
 padding-left: 20px;
     }
     .main .myintro .fullname{
-        font-size: 3rem;
+        font-size: 12vw;
         bottom: 20vh;
     }
     .projects > .description{
@@ -439,7 +505,7 @@ padding-left: 20px;
     }
     .main .myintro .profession .work{
         position: absolute;
-        font-size: 1em;
+        font-size: 2em;
         width: 100%;
         text-align: center;
         font-weight: light;
@@ -473,5 +539,13 @@ padding-left: 20px;
         text-align: left;
         font-size: 1.3em;
         
+    }
+    .innercontentblock{
+
+        width: 100%;
+    }
+    .innercontentblockparent
+    {
+        flex-direction: row;
     }
 }
